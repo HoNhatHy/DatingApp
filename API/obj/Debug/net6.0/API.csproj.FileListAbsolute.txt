@@ -1,0 +1,7 @@
+/home/nhathy/Desktop/DatingApp/API/obj/Debug/net6.0/API.csproj.AssemblyReference.cache
+/home/nhathy/Desktop/DatingApp/API/obj/Debug/net6.0/API.GeneratedMSBuildEditorConfig.editorconfig
+/home/nhathy/Desktop/DatingApp/API/obj/Debug/net6.0/API.AssemblyInfoInputs.cache
+/home/nhathy/Desktop/DatingApp/API/obj/Debug/net6.0/API.AssemblyInfo.cs
+/home/nhathy/Desktop/DatingApp/API/obj/Debug/net6.0/API.csproj.CoreCompileInputs.cache
+/home/nhathy/Desktop/DatingApp/API/obj/Debug/net6.0/API.MvcApplicationPartsAssemblyInfo.cs
+/home/nhathy/Desktop/DatingApp/API/obj/Debug/net6.0/API.MvcApplicationPartsAssemblyInfo.cache
