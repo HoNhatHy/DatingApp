@@ -1,4 +1,5 @@
 ﻿using API.Application.Application.Extensions;
+using Microsoft.OpenApi.Models;
 
 namespace API
 {
@@ -13,6 +14,12 @@ namespace API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddApplicationServices(_configuration);
+            services.AddControllers();
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebAPIv5", Version = "v1" });
+            });
+            services.AddCors();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
