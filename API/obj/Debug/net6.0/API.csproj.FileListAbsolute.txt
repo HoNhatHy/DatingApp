@@ -125,3 +125,16 @@ C:\Users\hy.ho\Desktop\DatingApp\API\obj\Debug\net6.0\API.genruntimeconfig.cache
 C:\Users\hy.ho\Desktop\DatingApp\API\obj\Debug\net6.0\ref\API.dll
 C:\Users\hy.ho\Desktop\DatingApp\API\bin\Debug\net6.0\Npgsql.dll
 C:\Users\hy.ho\Desktop\DatingApp\API\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\hy.ho\Desktop\DatingApp\API\bin\Debug\net6.0\MediatR.dll
+C:\Users\hy.ho\Desktop\DatingApp\API\bin\Debug\net6.0\MediatR.Contracts.dll
+C:\Users\hy.ho\Desktop\DatingApp\API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\hy.ho\Desktop\DatingApp\API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\hy.ho\Desktop\DatingApp\API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\hy.ho\Desktop\DatingApp\API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\hy.ho\Desktop\DatingApp\API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\hy.ho\Desktop\DatingApp\API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\hy.ho\Desktop\DatingApp\API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\hy.ho\Desktop\DatingApp\API\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\hy.ho\Desktop\DatingApp\API\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\hy.ho\Desktop\DatingApp\API\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\hy.ho\Desktop\DatingApp\API\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll

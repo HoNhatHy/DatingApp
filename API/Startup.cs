@@ -1,4 +1,5 @@
 ﻿using API.Application.Application.Extensions;
+using FluentValidation.AspNetCore;
 using Microsoft.OpenApi.Models;
 
 namespace API
@@ -14,7 +15,7 @@ namespace API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddApplicationServices(_configuration);
-            services.AddControllers();
+            //services.AddControllers().AddFluentValidation();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebAPIv5", Version = "v1" });

@@ -6,7 +6,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace API.Application.Infrastructure.Persistence.Migrations
 {
-    public partial class abc : Migration
+    public partial class InitialCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -18,8 +18,7 @@ namespace API.Application.Infrastructure.Persistence.Migrations
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     Username = table.Column<string>(type: "text", nullable: true),
                     PasswordHash = table.Column<byte[]>(type: "bytea", nullable: true),
-                    PasswordSalt = table.Column<byte[]>(type: "bytea", nullable: true),
-                    Created = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
+                    PasswordSalt = table.Column<byte[]>(type: "bytea", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -35,8 +34,7 @@ namespace API.Application.Infrastructure.Persistence.Migrations
                     Url = table.Column<string>(type: "text", nullable: true),
                     IsMain = table.Column<bool>(type: "boolean", nullable: false),
                     PublicId = table.Column<string>(type: "text", nullable: true),
-                    UserId = table.Column<int>(type: "integer", nullable: false),
-                    Created = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
+                    UserId = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {
