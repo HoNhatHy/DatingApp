@@ -1,7 +1,7 @@
 ﻿using API.Application.Application.Model;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using API.Application.Application.UserMediator.Command;
+using API.Application.Application.UserMediator.Query;
 
 namespace API.Application.API.Controllers
 {
@@ -14,10 +14,11 @@ namespace API.Application.API.Controllers
             return Ok(response);
         }
 
-        [HttpGet("get")]
-        public ActionResult GetUsers()
+        [HttpGet()]
+        public async Task<ActionResult<GetUserResponse>> GetUsers()
         {
-            return Ok("Those are users");
+            var response = await Mediator.Send(new GetUserQuery());
+            return Ok(response);
         }
     }
 }

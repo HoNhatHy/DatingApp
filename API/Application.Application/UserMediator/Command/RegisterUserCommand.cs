@@ -53,7 +53,7 @@ namespace API.Application.Application.UserMediator.Command
         public RegisterUserCommandValidator()
         {
             RuleFor(x => x.Username).NotEmpty().WithMessage("{PropertyName} should not be empty")
-                .Length(6, 25).WithMessage("Length of {PropertyName} has to between 5 and 26")
+                .Length(6, 25).WithMessage("Length of {PropertyName} has to be between 5 and 26")
                 .Must((string username) =>
                 {
                     return username.All(char.IsLetter);

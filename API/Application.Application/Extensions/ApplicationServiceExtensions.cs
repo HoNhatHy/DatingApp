@@ -1,4 +1,5 @@
-﻿using API.Application.Application.Common.Interfaces;
+﻿using API.Application.API.Helpers;
+using API.Application.Application.Common.Interfaces;
 using API.Application.Infrastructure.Persistence;
 using API.Application.Infrastructure.Services;
 using MediatR;
@@ -12,7 +13,7 @@ namespace API.Application.Application.Extensions
         public static IServiceCollection AddApplicationServices
             (this IServiceCollection services, IConfiguration _configuration)
         {
-            services.AddAutoMapper(Assembly.GetExecutingAssembly());
+            services.AddAutoMapper(typeof(AutoMapperProfiles).Assembly);
             services.AddMediatR(Assembly.GetExecutingAssembly());
             services.AddDbContext<ApplicationDbContext>(options =>
             {

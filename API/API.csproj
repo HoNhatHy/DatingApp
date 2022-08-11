@@ -22,7 +22,6 @@
 
   <ItemGroup>
     <Folder Include="Application.Application\PhotoMediator\" />
-    <Folder Include="Application.Application\UserMediator\Query\" />
     <Folder Include="Application.Infrastructure\Identity\" />
     <Folder Include="Application.Infrastructure\Persistence\Migrations\" />
   </ItemGroup>
