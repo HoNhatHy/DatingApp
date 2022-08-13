@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using API.Application.Application.UserMediator.Command;
 using API.Application.Application.UserMediator.Query;
+using Microsoft.AspNetCore.Authorization;
 
 namespace API.Application.API.Controllers
 {
@@ -14,6 +15,7 @@ namespace API.Application.API.Controllers
             return Ok(response);
         }
 
+        [Authorize]
         [HttpGet()]
         public async Task<ActionResult<GetUserResponse>> GetUsers()
         {
