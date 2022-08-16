@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/home/nhathy/Desktop/DatingApp/API/API.csproj": {}
+    "C:\\Users\\hy.ho\\Documents\\future\\dotnet-and-angular-course\\DatingApp\\API\\API.csproj": {}
   },
   "projects": {
-    "/home/nhathy/Desktop/DatingApp/API/API.csproj": {
+    "C:\\Users\\hy.ho\\Documents\\future\\dotnet-and-angular-course\\DatingApp\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/nhathy/Desktop/DatingApp/API/API.csproj",
+        "projectUniqueName": "C:\\Users\\hy.ho\\Documents\\future\\dotnet-and-angular-course\\DatingApp\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "/home/nhathy/Desktop/DatingApp/API/API.csproj",
-        "packagesPath": "/home/nhathy/.nuget/packages/",
-        "outputPath": "/home/nhathy/Desktop/DatingApp/API/obj/",
+        "projectPath": "C:\\Users\\hy.ho\\Documents\\future\\dotnet-and-angular-course\\DatingApp\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\hy.ho\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hy.ho\\Documents\\future\\dotnet-and-angular-course\\DatingApp\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/nhathy/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\hy.ho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -41,6 +43,10 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[11.0.0, )"
+            },
+            "CloudinaryDotNet": {
+              "target": "Package",
+              "version": "[1.19.0, )"
             },
             "FluentValidation.AspNetCore": {
               "target": "Package",
@@ -79,8 +85,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -92,7 +97,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
