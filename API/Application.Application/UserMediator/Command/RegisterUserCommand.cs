@@ -4,12 +4,13 @@ using API.Application.Infrastructure.Persistence;
 using Application.Domain.Entities;
 using FluentValidation;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 using System.Security.Cryptography;
 using System.Text;
 
 namespace API.Application.Application.UserMediator.Command
 {
-    public record class RegisterUserCommand : IRequest<UserRegisterResponse>
+    public record RegisterUserCommand : IRequest<UserRegisterResponse>
     {
         public string Username { get; set; }
         public string Password { get; set; }
@@ -28,6 +29,10 @@ namespace API.Application.Application.UserMediator.Command
 
         public async Task<UserRegisterResponse> Handle(RegisterUserCommand request, CancellationToken cancellationToken)
         {
+            var userFound = await _context.Users.AnyAsync(user => user.Username == request.Username);
+
+            if(userFound) throw new UnauthorizedAccessException("User already exists");
+
             using var hmac = new HMACSHA512();
 
             var user = new User

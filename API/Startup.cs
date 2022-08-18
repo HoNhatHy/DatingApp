@@ -4,7 +4,6 @@ using API.Application.Application.UserMediator.Command;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
-using Microsoft.OpenApi.Models;
 
 namespace API
 {
@@ -23,6 +22,7 @@ namespace API
             services.AddControllers().AddFluentValidation(fv => {
                 fv.RegisterValidatorsFromAssemblyContaining<RegisterUserCommandValidator>();
             });
+            
             services.AddAuthentication(x =>
             {
                 x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;

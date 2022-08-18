@@ -1,8 +1,8 @@
 ﻿using API.Application.Application.Model;
 using Microsoft.AspNetCore.Mvc;
 using API.Application.Application.UserMediator.Command;
-using API.Application.Application.UserMediator.Query;
-using Microsoft.AspNetCore.Authorization;
+using Application.Application.Model;
+using Application.Application.UserMediator.Query;
 
 namespace API.Application.API.Controllers
 {
@@ -15,11 +15,9 @@ namespace API.Application.API.Controllers
             return Ok(response);
         }
 
-        [Authorize]
-        [HttpGet()]
-        public async Task<ActionResult<GetUserResponse>> GetUsers()
-        {
-            var response = await Mediator.Send(new GetUserQuery());
+        [HttpPost("login")]
+        public async Task<ActionResult<UserLoginResponse>> Login([FromBody] LoginUserQuery query) {
+            var response = await Mediator.Send(query);
             return Ok(response);
         }
     }

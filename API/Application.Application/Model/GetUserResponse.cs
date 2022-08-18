@@ -2,7 +2,7 @@
 {
     public class GetUserResponse
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
         public string Username { get; set; } = "";
         public List<PhotoResponse> Photos { get; set; }
     }
