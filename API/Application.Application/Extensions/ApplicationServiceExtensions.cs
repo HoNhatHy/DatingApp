@@ -27,7 +27,8 @@ namespace API.Application.Application.Extensions
                 options.Filters.Add<ApiExceptionFilterAttribute>())
                 .AddFluentValidation(x => x.AutomaticValidationEnabled = false);
             
-            services.AddScoped<ITokenService, TokenService>();
+            services.AddTransient<ITokenService, TokenService>();
+            services.AddTransient<IPhotoService, PhotoService>();
 
             return services;
         }
