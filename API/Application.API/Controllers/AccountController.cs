@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using API.Application.Application.UserMediator.Command;
 using Application.Application.Model;
 using Application.Application.UserMediator.Query;
+using Application.Application.UserMediator.Command;
 
 namespace API.Application.API.Controllers
 {
@@ -18,6 +19,13 @@ namespace API.Application.API.Controllers
         [HttpPost("login")]
         public async Task<ActionResult<UserLoginResponse>> Login([FromBody] LoginUserQuery query) {
             var response = await Mediator.Send(query);
+            return Ok(response);
+        }
+
+        [HttpDelete("delete-user/{username}")]
+        public async Task<ActionResult<string>> DeleteUser(string username) {
+            var response = await Mediator.Send(new DeleteUserCommand{Username = username});
+
             return Ok(response);
         }
     }

@@ -115,3 +115,5 @@ C:/Users/hy.ho/Desktop/DatingApp/API/bin/Debug/net6.0/FluentValidation.Dependenc
 /home/nhathy/Desktop/DatingApp/API/bin/Debug/net6.0/Npgsql.dll
 /home/nhathy/Desktop/DatingApp/API/bin/Debug/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
 /home/nhathy/Desktop/DatingApp/API/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll
+/home/nhathy/Desktop/DatingApp/API/bin/Debug/net6.0/CloudinaryDotNet.dll
+/home/nhathy/Desktop/DatingApp/API/bin/Debug/net6.0/Newtonsoft.Json.dll
